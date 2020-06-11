@@ -1,0 +1,16 @@
+{
+    "name": "argopecten/hosting_deploy",
+    "description": "Fork of https://www.drupal.org/project/hosting_deploy",
+    "license": "GNU General Public License v3.0",
+    "authors": [
+        {
+            "name": ""
+        }
+    ],
+    "type": "drupal-module",
+    "require": {
+        "drupal/hosting": "^3.180",
+        "drupal/aegir_objects": "3.1",
+        "drupal/features": "2.11"
+    }
+}

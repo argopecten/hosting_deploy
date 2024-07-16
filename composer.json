@@ -1,0 +1,28 @@
+{
+    "name": "drupal/hosting_deploy",
+    "description": "This module extends Aegir's platform deployment strategies, and enhances the user experience of the Create Platform form.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name":      "Aegir maintainers",
+            "homepage":  "http://docs.aegirproject.org/en/3.x/community/core-team/"
+        }
+    ],
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/hosting_deploy",
+        "docs": "http://docs.aegirproject.org/"
+    },
+    "repositories": {
+          "drupal": {
+                "type": "composer",
+                "url": "https://packages.drupal.org/7"
+          }
+    },
+    "require": {
+        "drupal/aegir_objects": "^3.190",
+        "drupal/features": "^2.15"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

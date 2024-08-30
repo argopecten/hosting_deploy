@@ -31,7 +31,7 @@ function hosting_platform_composer_git_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_composer_git_project'.
+  // Exported field_base: 'field_composer_git_project_url'.
   $field_bases['field_composer_git_project_url'] = array(
     'active' => 1,
     'cardinality' => 1,

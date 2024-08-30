@@ -15,7 +15,10 @@
 function drush_platform_composer_git_provision_verify_validate() {
   if (d()->type == 'platform' && d()->composer_git_project_url) {
     $platform = new Provision_ComposerGitCreateProject();
-    return $platform->validateProvisionVerify();
+    $success = $platform->validateProvisionVerify();
+    if (!$success) {
+      $platform->postProvisionDelete();
+    }
   }
 }
 

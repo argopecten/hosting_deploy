@@ -1,5 +1,5 @@
-name = Aegir Platform Composer (source)
-description = Build Aegir platforms from Composer.
+name = Aegir Platform Composer (Git)
+description = Build Aegir platforms with Composer from Git repositories.
 core = 7.x
 package = Aegir Deployment
 dependencies[] = features

@@ -12,7 +12,7 @@ function hosting_platform_composer_git_hosting_platform_context_options(&$task) 
     foreach (['composer_git_path', 'composer_git_project_url', 'composer_git_version'] as $option) {
       $field = 'field_' . $option;
 
-      if (isset($task->ref->$field) && !empty($task->ref->{$field})) {
+      if (isset($task->ref->$field) && !empty($task->ref->{$field}[$task->ref->language][0]['value'])) {
         $task->context_options[$option] = $task->ref->{$field}[$task->ref->language][0]['value'];
       }
 
@@ -40,4 +40,3 @@ function hosting_platform_composer_git_drush_context_import($context, &$node) {
     }
   }
 }
-
